@@ -1,0 +1,21 @@
+# зелёный по запросу для направления 1
+
+POST http://localhost:8082/green_request HTTP/1.1
+content-type: application/json
+
+{
+    "req-id":"12345", 
+    "req-auth": "SECRET_AUTH_KEY", 
+    "direction": 1
+}
+
+# зелёный по запросу для направления 2
+
+POST http://localhost:8082/green_request HTTP/1.1
+content-type: application/json
+
+{
+    "req-id":"12345", 
+    "req-auth": "SECRET_AUTH_KEY", 
+    "direction": 2
+}

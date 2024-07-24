@@ -1,0 +1,18 @@
+
+GET http://localhost:8081/test HTTP/1.1
+
+### request operation mode
+
+GET http://localhost:8081/mode/12345 HTTP/1.1
+
+
+### post diagnostics status
+
+POST http://localhost:8081/diagnostics HTTP/1.1
+content-type: application/json
+
+{
+    "tl-id":"12345", 
+    "tl-status": "ok", 
+    "tl-mode-id": "aaabbbccc"
+}
